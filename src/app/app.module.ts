@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+
+import { ProductCardComponent } from './Components/product-card/product-card.component';
+import { ProductsComponent } from './Pages/products/products.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    ProductsComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
@@ -18,3 +22,4 @@ import { TestComponent } from './test/test.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 

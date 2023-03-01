@@ -8,6 +8,8 @@ import { ProductCardComponent } from './Components/product-card/product-card.com
 import { ProductsComponent } from './Pages/products/products.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductViewComponent } from './Pages/product-view/product-view.component';
+
 
 
 
@@ -17,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     ProductCardComponent,
     SidebarComponent,
+    ProductViewComponent,
+    
     
   ],
   imports: [

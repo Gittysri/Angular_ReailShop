@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 
 import { ProductCardComponent } from './Components/product-card/product-card.component';
 import { ProductsComponent } from './Pages/products/products.component';
+import { SidebarComponent } from './Components/sidebar/sidebar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

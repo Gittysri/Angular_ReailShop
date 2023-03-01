@@ -1,0 +1,25 @@
+[
+    {
+        "image":"../../../assets/images/Iphone.png",
+        "name":"Iphone 12 Pro",
+        "category":"Smart Phone",
+        "description":"OS iOS 16 upgradable to iOS 16.3 Chipset Apple A15 Bionic (5 nm) CPU Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard) GPU Apple GPU (5-core graphics)",
+        "price":150000
+
+    },
+    {
+        "image":"../../../assets/images/Samsung.png",
+        "name":"Samsung S 22",
+        "category":"Smart Phone",
+        "description":"OS iOS 16 upgradable to iOS 16.3 Chipset Apple A15 Bionic (5 nm) CPU Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard) GPU Apple GPU (5-core graphics)",
+        "price":80000
+    },
+    {
+        "image":"../../../assets/images/Iphone.png",
+        "name":"Samsung S 22",
+        "category":"Smart Phone",
+        "description":"OS iOS 16 upgradable to iOS 16.3 Chipset Apple A15 Bionic (5 nm) CPU Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard) GPU Apple GPU (5-core graphics)",
+        "price":80000
+    }
+    
+]

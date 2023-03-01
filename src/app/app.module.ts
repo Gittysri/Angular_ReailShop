@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ProductCardComponent } from './Components/product-card/product-card.component';
 import { ProductsComponent } from './Pages/products/products.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -14,11 +16,13 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
     AppComponent,
     ProductsComponent,
     ProductCardComponent,
-    SidebarComponent
+    SidebarComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
     
   ],
   providers: [],

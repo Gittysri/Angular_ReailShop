@@ -1,9 +1,9 @@
 <div class="product-card">
-    <img src="../../../assets/images/Iphone.png" alt="Iphone">
+    <img src="{{product.image}}" alt="{{product.name}}">
     <div class="card-content">
-        <span class="productName" >Products</span>
-        <span class="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque, nam deserunt ea animi id quasi ratione voluptatem error totam quibusdam perferendis maiores a nisi ab doloribus accusamus iste fugiat.</span>
-        <span class="productPrice">{{180000 | number:'1.2-2'}} INR</span>
+        <span class="productName" >{{product.name}}</span>
+        <span class="productDescription">{{product.description}}</span>
+        <span class="productPrice">{{product.price | number:'1.2-2'}} INR</span>
     </div>
 </div> 
 

@@ -12,9 +12,8 @@
     </div>
 
     <div class="product-section">
-        <app-product-card></app-product-card>
-        <app-product-card></app-product-card>
-        <app-product-card></app-product-card>
+        <app-product-card *ngFor="let item of products" [product]="item"></app-product-card>
+        
         
     </div>
 

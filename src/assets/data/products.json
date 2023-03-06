@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "image":"../../../assets/images/Iphone.png",
         "name":"Iphone 12 Pro",
         "category":"Smart Phone",
@@ -8,6 +9,7 @@
 
     },
     {
+        "id":2,
         "image":"../../../assets/images/Samsung.png",
         "name":"Samsung S 22",
         "category":"Smart Phone",
@@ -15,6 +17,7 @@
         "price":80000
     },
     {
+        "id":3,
         "image":"../../../assets/images/Mac.png",
         "name":"Macbook Pro",
         "category":"Laptop",
@@ -22,10 +25,28 @@
         "price":80000
     },
     {
+        "id":4,
         "image":"../../../assets/images/Headphones.png",
         "name":"Leaf Studio",
         "category":"Headphones",
         "description":"OS iOS 16 upgradable to iOS 16.3 Chipset Apple A15 Bionic (5 nm) CPU Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard) GPU Apple GPU (5-core graphics)",
+        "price":80000
+    },
+    {
+        "id":5,
+        "image":"../../../assets/images/Iphone.png",
+        "name":"Iphone 12 Pro",
+        "category":"Smart Phone",
+        "description":"OS iOS 16 upgradable to iOS 16.3 Chipset Apple A15 Bionic (5 nm) CPU Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard) GPU Apple GPU (5-core graphics)",
+        "price":150000
+
+    },
+    {
+        "id":6,
+        "image":"../../../assets/images/Samsung.png",
+        "name":"Samsung S 22",
+        "category":"Smart Phone",
+        "description":"Infinity-O Display a near bezel-less, full-frontal screen. Measured diagonally Galaxy S22's screen size is 6.1 in the full rectangle and 5.9 with accounting for the rounded corners, Galaxy S22+'s screen size is 6.6 in the full rectangle",
         "price":80000
     }
     

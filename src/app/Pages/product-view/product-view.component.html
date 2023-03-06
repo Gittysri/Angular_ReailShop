@@ -1,14 +1,17 @@
 <div class="product-view-container">
     <div class="product-view-content">
         <div class="image-section">
-
+            <img src="{{singleProduct.image}}" alt="Images">
         </div>
         <div class="product-detail-section">
-            <span class="product-name"></span>
-            <span class="product-category"></span>
-            <span class="product-description"></span>
             
+            <span class="product-name">{{singleProduct?.name}}</span>
+            <span class="product-category">{{singleProduct?.category}}</span>
+            <span class="product-description">{{singleProduct?.description}}</span>
+            <div class="buy-now">Buy Now</div>
+            <div class="add-cart">Add to Cart</div>
+
 
         </div>
     </div>
-</div>
+</div>   

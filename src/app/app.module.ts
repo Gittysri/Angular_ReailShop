@@ -9,6 +9,8 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductViewComponent } from './Pages/product-view/product-view.component';
+import { CartComponent } from './Pages/cart/cart.component';
+
 
 
 
@@ -20,12 +22,15 @@ import { ProductViewComponent } from './Pages/product-view/product-view.componen
     ProductCardComponent,
     SidebarComponent,
     ProductViewComponent,
+    CartComponent,
+    
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     HttpClientModule
     
   ],

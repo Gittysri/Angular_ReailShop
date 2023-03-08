@@ -1,1 +1,34 @@
-<p>cart works!</p>
+<div class="cart-section">
+    <h1 class="title">Cart</h1>
+    <div class="empty-cart" *ngIf="!cartItems.length">
+        <img class="img" src="../../../assets/images/nothing.gif" alt="nothing in cart">
+        <h2 class="description">Nothing to see here yet!</h2>
+        <a href="#"><button class="button-36" role="button">Go to Shop</button></a>
+    </div>
+
+    <div class="cart-component" *ngIf="cartItems.length">
+        <div class="container" >
+            
+            <table>
+                <thead>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let cartItem of cartItems">
+                    
+                    <td><img src="{{cartItem.image}}" alt="Samsung" style="height: 7em;"></td>
+                    <td>{{cartItem.name}}</td>
+                    <td>{{cartItem.description}}</td>
+                    <td>{{cartItem.price}}</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+</div>
+
+

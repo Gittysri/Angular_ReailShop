@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -8,11 +9,19 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./product-view.component.sass']
 })
 export class ProductViewComponent implements OnInit{
-  constructor (private productService: ProductsService,private activatedRoute : ActivatedRoute, private router : Router){}
+  constructor (private productService: ProductsService,private activatedRoute : ActivatedRoute, private router : Router, private cartService:CartService){}
+
   products : Array<any> = []
   singleProduct : any ;
+  isProductInCart: boolean = false
+  cartItemCount:any;
+  
+  
 
   ngOnInit(): void {
+    this.cartService.cartSubject.subscribe((cartItems: any) => {
+      this.cartItemCount = cartItems.length;
+    })
     let id=0;
 
     this.activatedRoute.paramMap.subscribe((data: any) => {
@@ -29,7 +38,28 @@ export class ProductViewComponent implements OnInit{
     },(error : any) => {
       console.log(error)
     })
+    
+
+    
   })
+
+  
+
+    }
+    addCart(value: any){
+      this.cartService.addProductToCart(value);
+      this.isProductInCart = true;
+      // console.log(value);
+      // let cartDataNull = localStorage.getItem('localCart');
+      // if(cartDataNull == null){
+      //   let storeDataGet:any = [];
+      //   storeDataGet.push(value);
+      //   localStorage.setItem('localCart', JSON.stringify(storeDataGet));
+      // }else{
+      //   var id = value.singleProductId;
+      //   let index:number = -1;
+      // }
+      // localStorage.setItem('localCart', JSON.stringify(value));
     }
   }
 

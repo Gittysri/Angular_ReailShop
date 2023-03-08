@@ -10,7 +10,9 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductViewComponent } from './Pages/product-view/product-view.component';
 import { CartComponent } from './Pages/cart/cart.component';
-
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ErrorComponent } from './Pages/error/error.component';
 
 
 
@@ -23,6 +25,7 @@ import { CartComponent } from './Pages/cart/cart.component';
     SidebarComponent,
     ProductViewComponent,
     CartComponent,
+    ErrorComponent,
     
     
     
@@ -30,8 +33,10 @@ import { CartComponent } from './Pages/cart/cart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    Ng2SearchPipeModule
     
-    HttpClientModule
     
   ],
   providers: [],

@@ -1,4 +1,11 @@
+<div class="cart_icon">
+    <i routerLink="/cart" class="fa fa-shopping-cart" style="font-size: 2.2em;padding-left: 90%;">
+    </i>
+    <div class="cart-value" *ngIf="cartItemCount">
+        {{cartItemCount}}
+    </div>
 <div class="product-view-container">
+    
     <div class="product-view-content">
         <div class="image-section">
             <img src="{{singleProduct.image}}" alt="Images">
@@ -9,7 +16,9 @@
             <span class="product-category">{{singleProduct?.category}}</span>
             <span class="product-description">{{singleProduct?.description}}</span>
             <div class="buy-now">Buy Now</div>
-            <div class="add-cart">Add to Cart</div>
+            <button class="add-cart" (click)="addCart(singleProduct)" *ngIf="!isProductInCart">Add to Cart</button>
+            <button disabled class="add-cart" *ngIf="isProductInCart" >Added</button>
+            
 
 
         </div>

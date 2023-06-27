@@ -4,6 +4,7 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { ProductViewComponent } from './Pages/product-view/product-view.component';
 import { CartComponent } from './Pages/cart/cart.component';
 import { ErrorComponent } from './Pages/error/error.component';
+import { OrdersComponent } from './Pages/orders/orders.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,9 @@ const routes: Routes = [
   },
   {
     path:'product-view/:id', component:ProductViewComponent
+  },
+  {
+    path:'orders' , component:OrdersComponent
   },
   {
     path:'**', component:ErrorComponent

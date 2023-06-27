@@ -13,6 +13,7 @@ import { CartComponent } from './Pages/cart/cart.component';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ErrorComponent } from './Pages/error/error.component';
+import { OrdersComponent } from './Pages/orders/orders.component';
 
 
 
@@ -26,6 +27,7 @@ import { ErrorComponent } from './Pages/error/error.component';
     ProductViewComponent,
     CartComponent,
     ErrorComponent,
+    OrdersComponent,
     
     
     
